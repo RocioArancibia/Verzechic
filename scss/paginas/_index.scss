@@ -1,0 +1,60 @@
+/* & se usa para poder acomodar el codigo, para no repetir el mismo class para llamar y darle estilo */
+/* si uso inventacion puedo usar esta propiedad tambien */
+/* Separa por secciones  */
+
+/* Carrosel */
+.tituloPrincipal {
+  font-size: 2rem;
+  color: #222;
+
+  text-align: center;
+  margin: 0rem 0.25rem 0.25rem 0;
+}
+
+.nombre {
+  margin-bottom: 0.1rem;
+}
+
+/* animacion */
+.imagen:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.contenedorFlex img,
+.contenedorFlex p {
+  width: 45%;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 800px) {
+  .carrosel {
+    border: solid 1px white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 60%;
+  }
+  .carrosel img {
+    width: 1400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .tituloPrincipal {
+    margin: 9%;
+    background-color: transparent;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.000000001px #def9f9;
+    color: #222;
+  }
+  .contenedorFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
