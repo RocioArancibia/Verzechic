@@ -15,22 +15,29 @@
   margin-bottom: 0.1rem;
 }
 
-/* animacion */
-.imagen:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedorFlex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0.25rem;
+  padding: 0.1rem;
 }
 
 .contenedorFlex img,
 .contenedorFlex p {
-  width: 45%;
   font-size: 1.5rem;
 }
 
-
+/* web */
 @media (min-width: 800px) {
   .carrosel {
     border: solid 1px white;
@@ -39,6 +46,8 @@
     background-position: center;
     height: 60%;
   }
+
+  
   .carrosel img {
     width: 1400px;
     height: 400px;
@@ -54,7 +63,38 @@
   .contenedorFlex {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100;
   }
+  .imagen {
+    width: 500px;
+
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+  /* animacion */
+}
+
+/* Cuerpo */
+.contenedorFlex p {
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
 }
 
 
+.tituloSecundario,
+.tituloTercero {
+  width: 1310px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  border-bottom: solid 1px#222;
+  border-top: solid 1px #222;
+}

@@ -1,0 +1,120 @@
+/*VERSION TAB contacto.html*/
+@media (min-width: 700px) and (max-width: 800px) {
+  .contenedorContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 2% auto;
+  }
+
+  .contenedorContacto {
+    width: 650px;
+  }
+  form {
+    width: 550px;
+  }
+  .itemContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+  }
+  .mapaContacto {
+    width: 550px;
+    height: 300px;
+  }
+  .contenidoFormulario {
+    width: 450px;
+  }
+  .itemContactoIcono i {
+    margin-left: 1000px;
+  }
+}
+
+/*VERSION WEB contacto.html*/
+@media screen and (min-width: 801px) {
+  .contenedorContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+  }
+
+  .itemContacto {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 450px;
+  }
+
+  .contendorMapaForm {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 1000px;
+  }
+
+  form {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    width: 350px;
+    height: 400px;
+  }
+  form label {
+    margin-left: 5%;
+    text-align: center;
+  }
+  .contenidoFormulario {
+    font-family: "Poiret One", cursive;
+    background-color: $colorPrincipal;
+    font-size: 20px;
+    border: none;
+    padding: 2% 5%;
+  }
+
+
+
+  .boton {
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px black;
+
+    &:hover {
+      background-color: $colorSecundario;
+    }
+  }
+
+  .mapaContacto {
+    margin-top: 50px;
+    width: 350px;
+    height: 400px;
+  }
+  .itemContactoIcono {
+    width: 400px;
+    margin: 0 30px;
+  }
+}
+.itemContactoIcono a {
+  color: $colorSecundario;
+}
+.itemContactoIcono i {
+  margin-left: 30%;
+}

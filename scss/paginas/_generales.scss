@@ -1,38 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
 }
 
-/* body {
-  background-color: $colorPrincipal;
-
-  .contenedorGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "contenendorGridH"
-      "carrosel"
-      "contenedorMain"
-      "contenedorFooter";
-  }
-  .contenedorGridH {
-    grid-area: contenendorGridH;
-
-    .carrosel {
-      grid-area: carrosel;
-    }
-    .contenedorMain {
-      grid-area: contenedorMain;
-    }
-    .contenedorFooter {
-      grid-area: contenedorFooter;
-    }
-  }
-} */
-
-/* NAVBAR */
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 .navbar {
   background-color: $colorSecundario;
@@ -52,4 +29,143 @@
   }
 }
 
+/* FOOTER */
+/* Mobile fist Footer */
+.whatsappTurno {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 
+  width: 100%;
+}
+.whatsappTurno i {
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.float-end {
+  margin-right: 30px;
+}
+.iconoWhatsappFooter {
+  color: #14939b;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.iconowhatsappfooter:hover {
+  color: #25d366;
+}
+.whatsappTurno p {
+  text-align: center;
+  margin: auto 0;
+  color: transparent;
+  font-size: 1.5rem;
+}
+
+/* Barra del fooder */
+.barraFooter {
+  background-color: #444;
+}
+.elementosFooter {
+  margin: auto;
+}
+.barraFooter div a {
+  color: #7eced1;
+}
+
+.iconoWhatsapp:hover {
+  color: #25d366;
+}
+.iconoInstagramFooter:hover {
+  color: #833ab4;
+}
+.iconoFacebookFooter:hover {
+  color: #3b5998;
+}
+.iconoCorreoFooter:hover {
+  color: #0072c6;
+}
+
+.nuestraSucursal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #444;
+  color: $colorPrincipal;
+
+  text-align: center;
+}
+.tituloSucursal {
+  border-bottom: solid 1px $colorPrincipal;
+  padding-top: 30px;
+}
+
+.direccion a,
+.telefono a {
+  color: $colorPrincipal;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contenedorTelefonoDireccion {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+  .whatsappTurno p {
+    color: #222;
+  }
+  .nuestraSucursal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .tituloSucursal {
+    width: 1440px;
+    font-size: 2rem;
+    border-bottom: solid 1px $colorPrincipal;
+    padding-bottom: 40px;
+  }
+  .telefono,
+  .direccion {
+    width: 400px;
+  }
+
+  .direccion {
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+
+  .telefono {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  .contenedorMapa iframe {
+    width: 700px;
+    height: 300px;
+  }
+  .contenedorTelefonoDireccion {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .direccion a,
+  .telefono a {
+    font-size: 1.5rem;
+  }
+}
+
+/* BOTON DE WS */
+
+.btn {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  position: sticky;
+  z-index: 5;
+}
+.btn a {
+  text-decoration: none;
+  color: $colorPrincipal;
+}
