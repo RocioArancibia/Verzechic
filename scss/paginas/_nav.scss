@@ -1,0 +1,60 @@
+/* Mobile */
+.btnNav{
+  margin-right: 5%;
+}
+.contenedorLogo{
+      margin-left: 5%;
+
+  .logo {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+
+
+  }
+}
+.desplegableNav{
+  margin-right: 5%;
+}
+
+.btnWhatsapp{
+  opacity: 0;
+}
+/* Web */
+@media  screen and (min-width: 1000px) {
+  .contenedorItems{
+  margin-left: 20%;
+}
+.contenedorLogo {
+  .logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+  }
+}
+
+/* Boton  Saca tu turno*/
+.btnWhatsapp {
+  background-color: $colorPrincipal;
+  text-align: center;
+  border-radius: 5%;
+  opacity: 1;
+  
+
+  &:hover {
+    background-color: $colorWhatsapp;
+  }
+
+  .turno {
+      color: $colorFont;
+      padding: 0;
+      &:hover{
+        color:white;
+      }
+  }
+}
+}
