@@ -3,24 +3,9 @@
 /* Separa por secciones  */
 
 /* Carrosel */
-.tituloPrincipal {
-  font-size: 2rem;
-  color: #222;
-
-  text-align: center;
-  margin: 0rem 0.25rem 0.25rem 0;
-}
-
-.nombre {
-  margin-bottom: 0.1rem;
-}
 
 main {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-content: center;
+  @extend %flexColumn;
 }
 
 .contenedorFlex {
@@ -37,29 +22,54 @@ main {
   font-size: 1.5rem;
 }
 
+/* Cuerpo */
+.contenedorFlex p {
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+}
+
+.tituloSecundario,
+.tituloTercero {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  background-color: map-get($colores, tercero);
+}
+.imagen {
+  width: 200px;
+  margin: auto;
+}
 /* web */
-@media (min-width: 800px) {
+@include mediaQuery(desktop) {
   .carrosel {
     border: solid 1px white;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 60%;
-  }
-
-  
-  .carrosel img {
-    width: 1400px;
-    height: 400px;
-    object-fit: cover;
+    margin-top: 10%;
   }
   .tituloPrincipal {
-    margin: 9%;
-    background-color: transparent;
-    font-size: 3rem;
-    -webkit-text-stroke: 0.000000001px #def9f9;
-    color: #222;
+    color: map-get($colores, principal);
+    text-align: center;
+    margin-bottom: 5%;
   }
+
+  .nombre {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    color: map-get($colores, principal);
+  }
+
+  .carrosel img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+  }
+
   .contenedorFlex {
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,24 +87,19 @@ main {
     }
   }
   /* animacion */
+
+  .tituloSecundario,
+  .tituloTercero {
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    width: 100%;
+    color: map-get($colores, font);
+  }
+.imagen {
+  width: 30%;
+
+  margin: 0;
+  
 }
-
-/* Cuerpo */
-.contenedorFlex p {
-  width: 90%;
-  margin: auto;
-  text-align: justify;
-  font-size: 1.25rem;
-  padding: 0 0.5rem;
-}
-
-
-.tituloSecundario,
-.tituloTercero {
-
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 3rem;
-  border-bottom: solid 1px#222;
-  border-top: solid 1px #222;
 }

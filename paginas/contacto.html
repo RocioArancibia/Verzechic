@@ -5,57 +5,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <title>Verzechic Peluqueria y estetica | Contacto</title>
+<!-- SEO -->
+<meta name="description"
+  content="Somos una peluquería y estética de Córdoba con el mejor equipo de profesionales y el valor agregado de un servicio en constante proceso de renovación y creatividad">
+<meta name="keywords"
+  content="peluqueria, estetica, cordoba, Verzechic, Veronica Zegarra, color, estilo, corte, pelo, recomendacion, mejores, alisado, color, depilacion, belleza, mujer">
 
-  <!-- Link a bootstrap -->
+<!-- Link a bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- link for css -->
-  <link rel="stylesheet" href="../css/main.css">
-  <!--link font awesome-->
-  <script src="https://kit.fontawesome.com/1ce953ece8.js" crossorigin="anonymous"></script>
-  <!-- link a google fonts -->
+<!-- Link a css -->
+<link rel="stylesheet" href="../css/main.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<!-- Link a font awesome -->
+<script src="https://kit.fontawesome.com/1ce953ece8.js" crossorigin="anonymous"></script>
+
+<!-- Link a google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Sail&display=swap" rel="stylesheet">
 
 </head>
 
+<!-- NAV BAR -->
+
 <body class="contenedorGrid">
   <header class="contenedorGridH">
-    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #12909e;">
+    <nav class="navbar navbar-expand-lg navbar-light navbarlogo bg-navbar fixed-top bg-white contenedorNav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img src="../imagenes/logo.jpg" alt="Logo" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
+        <a class="navbar-brand contenedorLogo" href="../index.html"><img src="../imagenes/logo.jpg" alt="Logo"
+            class="img-fluid logo">
+        </a>
+        <button class="navbar-toggler btn btnNav" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
+          <div class="offcanvas-header desplegableNav">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Verzechic</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          <div class="offcanvas-body contenedorItems">
+            <ul class="navbarprincipal navbar-nav ml-auto ">
+              <!-- Inicio -->
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
+              <!-- Peluqueria -->
               <li class="nav-item">
-                <a class="nav-link" href="./peluqueria.html">Peluquería</a>
+                <div class="dropdown">
+                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./peluqueria.html">Peluquería</a>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Alisado</button></li>
+                    <li><button class="dropdown-item" type="button">Color</button></li>
+                    <li><button class="dropdown-item" type="button">Bayague</button></li>
+                    <li><button class="dropdown-item" type="button">Corte femenino</button></li>
+                    <li><button class="dropdown-item" type="button">Corte Masculino</button></li>
+                    <li><button class="dropdown-item" type="button">Corte niños</button></li>
+                  </ul>
+                </div>
               </li>
+              <!-- Estetica -->
               <li class="nav-item">
-                <a class="nav-link" href="./estetica.html">Estética</a>
+                <div class="dropdown">
+                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Estética</a>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Lifting de pestañas</button></li>
+                    <li><button class="dropdown-item" type="button">Limpieza facial</button></li>
+                    <li><button class="dropdown-item" type="button">Depilacion de rostro con cera</button></li>
+                    <li><button class="dropdown-item" type="button">Depilacion definitiva</button></li>
+                    <li><button class="dropdown-item" type="button">Body up</button></li>
+                    <li><button class="dropdown-item" type="button">Crioliposis</button></li>
+                  </ul>
+                </div>
               </li>
+              <!-- Promociones -->
+              
               <li class="nav-item">
                 <a class="nav-link" href="./promociones.html">Promociones</a>
               </li>
+              <!-- Contacto-->
+
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
+            <!-- Boton saca tu turno -->
+            <div class="nav-item btnWhatsapp ">
+              <a class="nav-link btn btn  "
+                href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
+                target="_blank"><span class="turno"> Saca tu
+                  turno </span></a>
+            </div>
           </div>
+        </div>
+      </div>
     </nav>
     <!-- Fin del contenedor Nav -->
   </header>
@@ -111,64 +165,44 @@
       </div>
     </Section>
   </main>
-  <!--Inicio del footer-->
-  <footer class="contenedorFooter">
-    <!-- icono de whatsapp -->
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
-      <button type="button" class="btn btn-primary position-relative bg-success p-2 border border-success class="
-        rounded-pill" "
-        style=" --bs-bg-opacity: .5;">
-        <a href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-          target="_blank" class="iconoWhatsappFooter">Solicita tu turno! <i class="fab fa-whatsapp  fa-4x"></i></a><span
-          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+1 <span
-            class="visually-hidden"></span></span>
-      </button>
-
-
-    </div> <!-- FIN icono de whatsapp -->
-
-
-    <div class="nuestraSucursal">
-      <h4 class="tituloSucursal">
-        Nuestra sucursal
-      </h4>
-      <div class="contenedorMapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1107.25013957037!2d-64.27815181666007!3d-31.301910195043884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d858fe15121%3A0xccd7e71c2c8e9342!2sVerzechic!5e0!3m2!1ses!2sar!4v1640706759900!5m2!1ses!2sar"
-          style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
-      </div>
-      <div class="contenedorTelefonoDireccion">
-        <div class="telefono">
-          <h4>Teléfono</h4>
-          <a href="tel:543543317887" target="_blank">03543 15317887</a>
-        </div>
-        <div class="direccion">
-          <h4>Dirección</h4>
-          <a href="https://www.google.com/maps/place/Verzechic/@-31.301617,-64.277729,18z/data=!4m5!3m4!1s0x0:0xccd7e71c2c8e9342!8m2!3d-31.301617!4d-64.2777291?hl=es"
-            target="_blank">Mendoza 1788, Villa Allende</a>
-        </div>
-      </div>
-    </div> <!-- Fin nuestra sucursal -->
-
-    <div class="d-flex flex-row-reverse bd-highlight d-flex justify-content-evenly barraFooter">
-      <div class="p-2 bd-highlight"><a
+  <!-- FOOTER -->
+  <footer class="container">
+    <!-- Redes sociales-->
+    <ul class="contenedorRedes">
+      <li class="p-2 bd-highlight"><a
           href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-          target="_blank" class="iconoWhatsapp"><i class="fab fa-whatsapp-square fa-3x"></i></a></div>
-      <div class="p-2 bd-highlight"><a href="mailto:
-            veronicazegarra208@gmail.com" target="_blank" class="iconoCorreoFooter"><i
-            class="fas fa-envelope fa-3x"></i></a></div>
-      <div class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
-          class="iconoFacebookFooter"><i class="fab fa-facebook-square fa-3x"></i></a></div>
-      <div class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank
-                " class="iconoInstagramFooter"><i class="fab fa-instagram-square fa-3x"></i></a></div>
-
-    </div><!-- FIN barra footer -->
+          target="_blank" class="redes"><i class="fab fa-whatsapp-square"></i></a></li>
+      <li class="p-2 bd-highlight"><a href="mailto:
+                veronicazegarra208@gmail.com" target="_blank" class="redes"><i class="fas fa-envelope "></i></a></li>
+      <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
+          class="redes"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="redes"><i
+            class="fab fa-instagram-square"></i></a></li>
+    </ul>
+    <!-- Fin redes -->
+    <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      </a>
+      <ul class="nav navFooter w-100">
+        <li class="nav-item"><a href="../index.html" class="nav-link text-muted itemFooter">Inicio</a></li>
+        <li class="nav-item"><a href="./peluqueria.html" class="nav-link text-muted itemFooter">Peluquería</a>
+        </li>
+        <li class="nav-item"><a href="./estetica.html" class="nav-link text-muted itemFooter">Estética</a>
+        </li>
+        <li class="nav-item"><a href="./promociones.html" class="nav-link  text-muted itemFooter">Promociones</a>
+        </li>
+        <li class="nav-item"><a href="./contacto.html" class="nav-link text-muted itemFooter">Contacto</a>
+        </li>
+      </ul>
+    </section>
+    <p class="text-muted copyright">&copy; 2022 Todos los derechos reservados</p>
   </footer>
-</body>
-<!-- Link a bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-</html>
+  
+  <!-- Link a bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  </html>

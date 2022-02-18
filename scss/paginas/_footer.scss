@@ -1,0 +1,37 @@
+.contenedorRedes {
+  @include flexbox(row, space-around, center, wrap);
+  .itemFooter {
+    color: map-get($colores, tercero);
+  }
+}
+.redes{
+      color: map-get($colores, font);
+}
+
+.navFooter {
+  @include flexbox(row, center, center, wrap);
+  .itemFooter {
+    color: map-get($colores, tercero);
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+/* Web */
+@include mediaQuery(desktop) {
+  .navFooter {
+    @include flexbox(row, space-around, center, wrap);
+  }
+
+  .redes{
+    margin: 50px
+  }
+
+  .contenedorRedes {
+  @include flexbox(row, center, center, wrap);
+  .itemFooter {
+    color: map-get($colores, tercero);
+  }
+}
+}

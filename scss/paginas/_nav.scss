@@ -1,9 +1,9 @@
 /* Mobile */
-.btnNav{
+.btnNav {
   margin-right: 5%;
 }
-.contenedorLogo{
-      margin-left: 5%;
+.contenedorLogo {
+  margin-left: 5%;
 
   .logo {
     width: 7rem;
@@ -11,50 +11,53 @@
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid white;
-
-
   }
 }
-.desplegableNav{
+.desplegableNav {
   margin-right: 5%;
 }
 
-.btnWhatsapp{
+.btnWhatsapp {
   opacity: 0;
 }
+.botonNav {
+  border: none;
+  background-color: white;
+}
 /* Web */
-@media  screen and (min-width: 1000px) {
-  .contenedorItems{
-  margin-left: 20%;
-}
-.contenedorLogo {
-  .logo {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid white;
+@media screen and (min-width: 1000px) {
+  .contenedorItems {
+    margin-left: 20%;
   }
-}
-
-/* Boton  Saca tu turno*/
-.btnWhatsapp {
-  background-color: $colorPrincipal;
-  text-align: center;
-  border-radius: 5%;
-  opacity: 1;
-  
-
-  &:hover {
-    background-color: $colorWhatsapp;
+  .contenedorLogo {
+    .logo {
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid white;
+    }
   }
 
-  .turno {
+  /* Boton  Saca tu turno*/
+  .btnWhatsapp {
+    background-color: $colorPrincipal;
+    text-align: center;
+    border-radius: 5%;
+    opacity: 1;
+
+    &:hover {
+      background-color: $colorWhatsapp;
+      transition: 0.2s;
+    }
+
+    .turno {
       color: $colorFont;
       padding: 0;
-      &:hover{
-        color:white;
+      &:hover {
+        color: white;
+        transition: 0.2s;
       }
+    }
   }
-}
 }

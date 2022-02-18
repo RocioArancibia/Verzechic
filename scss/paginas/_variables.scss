@@ -1,14 +1,104 @@
 $colorPrincipal: #def9f9;
 $colorSecundario: #12909e;
-$colorFont:#0000008c;
-$colorWhatsapp:#25d366;
-$colorInstagram:#833ab4;
+
+$colorFont: #0000008c;
+$colorWhatsapp: #25d366;
+$colorInstagram: #833ab4;
 $colorFacebook: #3b5998;
-$colorCorreo:#0072c6;
+$colorCorreo: #0072c6;
+
+/* Color pallete */
+$colores: (
+  principal: #def9f9,
+  secundario: #12909e,
+  tercero: #fff,
+  font:#0000008c,
+  backFooter:#0000008c,
+  hover-primario: darken(#12909e, 30),
+  hover-secundario: lightnen(#12909e, 30) /*   "terciario":$color terciario, */
+);
+
+/* Para llamar el mapa 
+
+map-get ($colores, principal);
+
+map-get($colores, font);
+*/
+
+$redes: (
+  whatsapp: $colorWhatsapp,
+  instagram: $colorInstagram,
+  facebook: $colorFacebook,
+  color: $colorCorreo,
+);
+
+/* extend */
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+}
+
+%flexRow {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+/* para llamar al extend
+@extend %flexColumn;
+
+@extend %flexRow;
+
+recordar ponerlo luego de llamar al class
+*/
+
+/* mixins */
+@mixin flexbox($direction, $justify, $content,$wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-content: $content;
+  flex-wrap: $wrap;
+}
+
+/* para llamarlo
+@include flexbox(column, space-between, nowrap)
+
+
+    @include flexbox(row, space-around, space-around,nowrap);
+
+PARA MEDIA QUERYS
+
+*/
+
+@mixin mediaQuery($diseñoPantalla) {
+  @if $diseñoPantalla == desktop {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
+  } @else if $diseñoPantalla == tablet {
+    @media only screen and (min-width: 700px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: 500px) {
+    }
+  }
+}
 
 /* 
-$tipografia:
-arial,
-times new roman,
-comic sans;
- */
+@include mediaQuery (desktop) {
+}
+
+@include mediaQuery (tablet) {
+}
+
+@include mediaQuery(mobile) {
+}
+
+  */

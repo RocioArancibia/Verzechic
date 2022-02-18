@@ -1,15 +1,54 @@
+/* Color pallete */
+/* Para llamar el mapa 
+
+map-get ($colores, principal);
+
+map-get($colores, font);
+*/
+/* extend */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+/* para llamar al extend
+@extend %flexColumn;
+
+@extend %flexRow;
+
+recordar ponerlo luego de llamar al class
+*/
+/* mixins */
+/* para llamarlo
+@include flexbox(column, space-between, nowrap)
+
+
+    @include flexbox(row, space-around, space-around,nowrap);
+
+PARA MEDIA QUERYS
+
+*/
 /* 
-$tipografia:
-arial,
-times new roman,
-comic sans;
- */
+@include mediaQuery (desktop) {
+}
+
+@include mediaQuery (tablet) {
+}
+
+@include mediaQuery(mobile) {
+}
+
+  */
 * {
   margin: 0;
   padding: 0; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+li {
+  list-style: none; }
 
 /* Mobile */
 .btnNav {
@@ -30,6 +69,10 @@ body {
 .btnWhatsapp {
   opacity: 0; }
 
+.botonNav {
+  border: none;
+  background-color: white; }
+
 /* Web */
 @media screen and (min-width: 1000px) {
   .contenedorItems {
@@ -47,32 +90,62 @@ body {
     border-radius: 5%;
     opacity: 1; }
     .btnWhatsapp:hover {
-      background-color: #25d366; }
+      background-color: #25d366;
+      transition: 0.2s; }
     .btnWhatsapp .turno {
       color: #0000008c;
       padding: 0; }
       .btnWhatsapp .turno:hover {
-        color: white; } }
+        color: white;
+        transition: 0.2s; } }
+
+.contenedorRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap; }
+  .contenedorRedes .itemFooter {
+    color: #fff; }
+
+.redes {
+  color: #0000008c; }
+
+.navFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; }
+  .navFooter .itemFooter {
+    color: #fff; }
+
+.copyright {
+  text-align: center; }
+
+/* Web */
+@media only screen and (min-width: 1000px) {
+  .navFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap; }
+  .redes {
+    margin: 50px; }
+  .contenedorRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    .contenedorRedes .itemFooter {
+      color: #fff; } }
 
 /* & se usa para poder acomodar el codigo, para no repetir el mismo class para llamar y darle estilo */
 /* si uso inventacion puedo usar esta propiedad tambien */
 /* Separa por secciones  */
 /* Carrosel */
-.tituloPrincipal {
-  font-size: 2rem;
-  color: #222;
-  text-align: center;
-  margin: 0rem 0.25rem 0.25rem 0; }
-
-.nombre {
-  margin-bottom: 0.1rem; }
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
-
 .contenedorFlex {
   display: flex;
   flex-direction: column;
@@ -84,38 +157,6 @@ main {
 .contenedorFlex img,
 .contenedorFlex p {
   font-size: 1.5rem; }
-
-/* web */
-@media (min-width: 800px) {
-  .carrosel {
-    border: solid 1px white;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    height: 60%; }
-  .carrosel img {
-    width: 1400px;
-    height: 400px;
-    object-fit: cover; }
-  .tituloPrincipal {
-    margin: 9%;
-    background-color: transparent;
-    font-size: 3rem;
-    -webkit-text-stroke: 0.000000001px #def9f9;
-    color: #222; }
-  .contenedorFlex {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100; }
-  .imagen {
-    width: 500px; }
-    .imagen:hover {
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05); }
-  /* animacion */ }
 
 /* Cuerpo */
 .contenedorFlex p {
@@ -130,8 +171,56 @@ main {
   text-align: center;
   font-size: 2rem;
   margin-top: 3rem;
-  border-bottom: solid 1px #222;
-  border-top: solid 1px #222; }
+  background-color: #fff; }
+
+.imagen {
+  width: 200px;
+  margin: auto; }
+
+/* web */
+@media only screen and (min-width: 1000px) {
+  .carrosel {
+    border: solid 1px white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 60%;
+    margin-top: 10%; }
+  .tituloPrincipal {
+    color: #def9f9;
+    text-align: center;
+    margin-bottom: 5%; }
+  .nombre {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    color: #def9f9; }
+  .carrosel img {
+    width: auto;
+    height: 250px;
+    object-fit: cover; }
+  .contenedorFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100; }
+  .imagen {
+    width: 500px; }
+    .imagen:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
+  /* animacion */
+  .tituloSecundario,
+  .tituloTercero {
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    width: 100%;
+    color: #0000008c; }
+  .imagen {
+    width: 30%;
+    margin: 0; } }
 
 /* Peluqueria */
 @media screen and (min-width: 801px) {
@@ -139,8 +228,11 @@ main {
     font-size: 25px; } }
 
 .tituloPagina {
-  margin-top: 5%;
+  margin-top: 20%;
   text-align: center; }
+
+.contenedorTitulo {
+  background-color: #def9f9; }
 
 .textoPrimerSubtitulo {
   margin: 5%; }

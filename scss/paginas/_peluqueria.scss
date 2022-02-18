@@ -5,10 +5,13 @@
   }
 }
 .tituloPagina {
-  margin-top: 5%;
+  margin-top: 20%;
+
   text-align: center;
 }
-
+.contenedorTitulo{
+  background-color: map-get($colores, principal);
+}
 .textoPrimerSubtitulo {
   margin: 5%;
 }
@@ -18,6 +21,4 @@
   width: 95%;
   height: 300px;
   margin: auto;
-
 }
-
