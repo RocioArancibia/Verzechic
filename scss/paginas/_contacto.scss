@@ -1,42 +1,64 @@
+.itemContactoIcono a {
+  color: map-get($colores, secundario);
+}
+.itemContactoIcono i {
+  margin-left: 35%;
+}
+.tituloPagina {
+  margin-top: 39%;
+}
+.subtituloSegundo {
+  margin-top: 15%;
+  text-align: center;
+}
+.itemContacto:first-child {
+  margin-left: 9%;
+}
+.botonContacto {
+  margin: 5% 37%;
+}
+.mapaContacto {
+  width: 250px;
+  margin-left: 2%;
+}
+.contenedorContacto{
+  padding-bottom: 5%;
+}
+
+
 /*VERSION TAB contacto.html*/
-@media (min-width: 700px) and (max-width: 800px) {
-  .contenedorContacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin: 2% auto;
+@include mediaQuery(tablet) {
+  .tituloPagina {
+    margin-top: 15%;
+  }
+  .botonContacto {
+    margin: 5% 45%;
   }
 
-  .contenedorContacto {
-    width: 650px;
-  }
-  form {
-    width: 550px;
-  }
-  .itemContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-  }
   .mapaContacto {
-    width: 550px;
-    height: 300px;
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
   }
-  .contenidoFormulario {
-    width: 450px;
+
+  .subtituloSegundo {
+    margin-left: 0;
   }
   .itemContactoIcono i {
-    margin-left: 1000px;
+    margin-left: 45%;
   }
 }
 
 /*VERSION WEB contacto.html*/
-@media screen and (min-width: 801px) {
+@include mediaQuery(desktop) {
+  .tituloPagina {
+    margin-top: 15%;
+  }
+  .subtituloSegundo {
+    margin-top: 15%;
+    text-align: center;
+  }
+
   .contenedorContacto {
     display: flex;
     flex-direction: row;
@@ -84,22 +106,21 @@
   }
   .contenidoFormulario {
     font-family: "Poiret One", cursive;
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, principal);
     font-size: 20px;
     border: none;
     padding: 2% 5%;
   }
-
-
 
   .boton {
     font-size: 20px;
     text-align: center;
     border: solid 1px black;
 
-    &:hover {
-      background-color: $colorSecundario;
-    }
+  }
+  .subtituloSegundo {
+    margin-top: 15%;
+    text-align: center;
   }
 
   .mapaContacto {
@@ -111,10 +132,4 @@
     width: 400px;
     margin: 0 30px;
   }
-}
-.itemContactoIcono a {
-  color: $colorSecundario;
-}
-.itemContactoIcono i {
-  margin-left: 30%;
 }

@@ -62,15 +62,20 @@
               <li class="nav-item">
                 <div class="dropdown">
                   <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <a class="nav-link link-menu-dux dropdown-toggle" href="./peluqueria.html">Peluquería</a>
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Peluquería</a>
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Alisado</button></li>
-                    <li><button class="dropdown-item" type="button">Color</button></li>
-                    <li><button class="dropdown-item" type="button">Bayague</button></li>
-                    <li><button class="dropdown-item" type="button">Corte femenino</button></li>
-                    <li><button class="dropdown-item" type="button">Corte Masculino</button></li>
-                    <li><button class="dropdown-item" type="button">Corte niños</button></li>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Alisado</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Coloración</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Balayage</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte infantil</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Femenino</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Masculino y
+                          Barbería</a></button></li>
                   </ul>
                 </div>
               </li>
@@ -80,13 +85,20 @@
                   <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Estética</a>
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Lifting de pestañas</button></li>
-                    <li><button class="dropdown-item" type="button">Limpieza facial</button></li>
-                    <li><button class="dropdown-item" type="button">Depilacion de rostro con cera</button></li>
-                    <li><button class="dropdown-item" type="button">Depilacion definitiva</button></li>
-                    <li><button class="dropdown-item" type="button">Body up</button></li>
-                    <li><button class="dropdown-item" type="button">Crioliposis</button></li>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Lifting de
+                          pestañas</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Limpieza
+                          facial</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Depilación de rostro con
+                          cera</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Depilación
+                          definitiva</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Body Up</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Crioliposis</a></button>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -115,7 +127,8 @@
   </header>
   <!--fin del header-->
 
-  <main class="seccionPrincipal">
+  <main class="contenedorPeluqueria">
+
     <section class="contenedorTitulo">
       <h1 class="tituloPagina">Peluquería</h1>
       <p class="textoPrimerSubtitulo">Realizamos una consulta muy detallada para especificar que buscás.
@@ -125,81 +138,119 @@
         y
         perfil del cliente.</p>
     </section>
-    <div class="card-group">
-      <div class="card imagen">
-        <img src="../imagenes/peluqueria-1-alisado.jpg" class="card-img-top imagen" alt="Alisado">
-        <div class="card-body">
-          <h5 class="card-title" class="subtituloSegundo ">Alisado</h5>
-          <p class="card-text">Realizamos alisados sin formol ni parabenos, con el respaldo de una marca
-            internacional,
-            líder en productos para el cuidado
-            del cabello</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../imagenes/peluqueria-2-tintura.jpg" alt="Color" class="imagen">
-        <div class="card-body ">
-          <h5 class="card-title" class="subtituloSegundo">Color</h5>
-          <p class="card-text">Nuestra coloración incluye diferentes opciones desde los tradicionales con bajo poder
-            de
-            amoniaco hasta los sin amoniaco
-            de 12 minutos pasando por los pigmentos desarrollados que no necesitan oxidación.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../imagenes/peluqueria-3-balayage.jpg" class="card-img-top imagen" alt="Mechas">
-        <div class="card-body ">
-          <h5 class="card-title" class="subtituloSegundo">Mechas</h5>
-          <p class="card-text">La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como
-            aclarado por el sol, con tonos más
-            claros en las puntas.
-            Existen diferentes tonos y estilos.
-          </p>
+    <div class="ContenedorCards">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Alisado</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-1-alisado.jpg" class="card-img-top imagen imagenCards" alt="Alisado">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">Realizamos alisados sin formol ni parabenos, con el respaldo de
+              una marca internacional, líder en productos para el cuidado del cabello</p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Coloración</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-2-tintura.jpg" alt="Coloración"
+                  class="card-img-top imagen imagenCards">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">Nuestra coloración incluye diferentes opciones desde los
+              tradicionales con bajo poder
+              de amoniaco hasta los sin amoniaco de 12 minutos pasando por los pigmentos desarrollados que no necesitan
+              oxidación.</p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Balayage</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-3-balayage.jpg" alt="Bayalage" class="card-img-top imagen imagenCards">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">La técnica crea un cabello ligeramente aclarado que luce con un
+              aspecto natural como
+              aclarado por el sol, con tonos más
+              claros en las puntas.
+              Existen diferentes tonos y estilos.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="card-group">
-      <div class="card">
-        <img src="../imagenes/peluqueria-4-corte-femenino.jpg" class="card-img-top imagen" alt="Corte">
-        <div class="card-body">
-          <h5 class="card-title" class="subtituloSegundo">Corte femenino</h5>
-          <p class="card-text">Trabajamos múltiples técnicas para lograr los mejores cortes y tendencias.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../imagenes/peluqueria-5-corte-niño.jpg" alt="Corte niño" class="imagen">
-        <div class="card-body">
-          <h5 class="card-title" class="subtituloSegundo">Corte niño</h5>
-          <p class="card-text">Contamos con un espacio dedicado al corte infantil. Nuestros profesionales cuentan con
-            experiencia y tienen el mayor de
-            los cuidados y paciencia.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../imagenes/peluqueria-6-corte-masculino.jpg" class="card-img-top imagen" alt="Corte masculino">
-        <div class="card-body ">
-          <h5 class="card-title" class="subtituloSegundo">Corte Masculino</h5>
-          <p class="card-text">Somos creativos y tenemos nuestras propias tendencias, realizamos cualquier tipo de
-            corte
-            de cabello.</p>
+    <!-- Segunda SECCION -->
+    <div class="ContenedorCards">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Corte femenino</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-4-corte-femenino.jpg" class="card-img-top imagen imagenCards"
+                  alt="Alisado">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">Trabajamos múltiples técnicas para lograr los mejores cortes y
+              tendencias</p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Corte infantil</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-5-corte-niño.jpg" alt="Coloración"
+                  class="card-img-top imagen imagenCards">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">Contamos con un espacio dedicado al corte infantil. Nuestros
+              profesionales cuentan con
+              experiencia y tienen el mayor de
+              los cuidados y paciencia.</p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
+            <h2 class="mb-3 text-center">Corte Masculino y Barbería</h2>
+            <ul class="menu text-center">
+              <li>
+                <img src="../imagenes/peluqueria-6-corte-masculino.jpg" alt="Corte Masculino y Barberia"
+                  class="card-img-top imagen imagenCards">
+              </li>
+            </ul>
+            <p class="mt-3" style="min-height: 100px">La técnica crea un cabello ligeramente aclarado que luce con un
+              aspecto natural como
+              aclarado por el sol, con tonos más
+              claros en las puntas.
+              Existen diferentes tonos y estilos.</p>
+          </div>
         </div>
       </div>
     </div>
+
+
   </main>
+
   <!-- FOOTER -->
   <footer class="container">
     <!-- Redes sociales-->
     <ul class="contenedorRedes">
       <li class="p-2 bd-highlight"><a
           href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-          target="_blank" class="redes"><i class="fab fa-whatsapp-square"></i></a></li>
+          target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
       <li class="p-2 bd-highlight"><a href="mailto:
-                veronicazegarra208@gmail.com" target="_blank" class="redes"><i class="fas fa-envelope "></i></a></li>
+                  veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
+            class="fas fa-envelope "></i></a>
+      </li>
       <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
-          class="redes"><i class="fab fa-facebook-square"></i></a></li>
+          class="redes facebook"><i class="fab fa-facebook-square"></i></a></li>
       <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank"
-          class="redes"><i class="fab fa-instagram-square"></i></a></li>
+          class="redes instagram"><i class="fab fa-instagram-square"></i></a></li>
     </ul>
     <!-- Fin redes -->
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

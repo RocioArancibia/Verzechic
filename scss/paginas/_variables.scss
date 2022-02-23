@@ -1,35 +1,28 @@
-$colorPrincipal: #def9f9;
-$colorSecundario: #12909e;
-
-$colorFont: #0000008c;
-$colorWhatsapp: #25d366;
-$colorInstagram: #833ab4;
-$colorFacebook: #3b5998;
-$colorCorreo: #0072c6;
-
 /* Color pallete */
 $colores: (
   principal: #def9f9,
   secundario: #12909e,
   tercero: #fff,
+  cuarto:#7DBFC4,
+  backMain:#ecf5f5,
   font:#0000008c,
   backFooter:#0000008c,
-  hover-primario: darken(#12909e, 30),
-  hover-secundario: lightnen(#12909e, 30) /*   "terciario":$color terciario, */
+  /*   "terciario":$color terciario, */
 );
 
 /* Para llamar el mapa 
 
-map-get ($colores, principal);
-
-map-get($colores, font);
+map-get($colores, principal)
+map-get($colores, secundario)
+map-get($colores, font)
+map-get($redes, whatsapp)
 */
 
 $redes: (
-  whatsapp: $colorWhatsapp,
-  instagram: $colorInstagram,
-  facebook: $colorFacebook,
-  color: $colorCorreo,
+  whatsapp: #25d366,
+  instagram: #833ab4,
+  facebook: #3b5998,
+  correo: #0072c6,
 );
 
 /* extend */
@@ -53,9 +46,6 @@ $redes: (
 @extend %flexColumn;
 
 @extend %flexRow;
-
-recordar ponerlo luego de llamar al class
-*/
 
 /* mixins */
 @mixin flexbox($direction, $justify, $content,$wrap) {
@@ -82,7 +72,7 @@ PARA MEDIA QUERYS
       @content;
     }
   } @else if $diseñoPantalla == tablet {
-    @media only screen and (min-width: 700px) {
+    @media  screen and (min-width: 700px) and (max-width: 800px)  {
       @content;
     }
   } @else {

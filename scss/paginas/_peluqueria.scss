@@ -1,24 +1,63 @@
-/* Peluqueria */
-@media screen and (min-width: 801px) {
-  .textoPrimerSubtitulo {
-    font-size: 25px;
-  }
-}
-.tituloPagina {
-  margin-top: 20%;
-
-  text-align: center;
-}
-.contenedorTitulo{
-  background-color: map-get($colores, principal);
+/* Mobile */
+.contenedorPeluqueria {
+  background-color: map-get($colores, backMain);
+    padding-top: 20%;
 }
 .textoPrimerSubtitulo {
+  font-size: 25px;
+}
+
+.tituloPagina {
+  text-align: center;
+  font-weight: 900;
+}
+
+.textoPrimerSubtitulo {
+  margin: 5%;
+  text-align: center;
+}
+
+.imagenCards {
+  object-fit: cover;
+  width: 90%;
+  height: 300px;
   margin: 5%;
 }
 
-.card img {
-  object-fit: cover;
-  width: 95%;
-  height: 300px;
-  margin: auto;
+.contenedorCard {
+  background-color: map-get($colores, tercero);
+}
+
+/* Web */
+@include mediaQuery(desktop) {
+  .contenedorPeluqueria {
+    padding-top: 5%;
+margin: 0;
+    background-color: map-get($colores, backMain);
+  }
+  .textoPrimerSubtitulo {
+    font-size: 25px;
+  }
+
+  .tituloPagina {
+    padding: 5% 0 0 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .textoPrimerSubtitulo {
+    margin: 5%;
+  }
+
+  .imagenCards {
+    object-fit: cover;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+  }
+
+  .contenedorCard {
+    background-color: map-get($colores, tercero);
+  }
 }

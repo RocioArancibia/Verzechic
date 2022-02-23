@@ -24,6 +24,9 @@
   border: none;
   background-color: white;
 }
+.dropdown-item a{
+color: #212529;
+}
 /* Web */
 @media screen and (min-width: 1000px) {
   .contenedorItems {
@@ -39,25 +42,61 @@
     }
   }
 
+  /* Desplegable */
+
+  .dropdown-toggle::after {
+    transition: transform 0.15s linear;
+  }
+
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+
   /* Boton  Saca tu turno*/
   .btnWhatsapp {
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, principal);
     text-align: center;
     border-radius: 5%;
     opacity: 1;
 
     &:hover {
-      background-color: $colorWhatsapp;
-      transition: 0.2s;
+      background-color: map-get($redes, whatsapp);
+      transition: transform 0.5s ease-in-out;
     }
 
     .turno {
-      color: $colorFont;
+      color: map-get($colores, font);
       padding: 0;
       &:hover {
         color: white;
-        transition: 0.2s;
+        transition: transform 0.5s ease-in-out;
       }
+    }
+  }
+
+  /* ANIMACION linea al pasar el mouse en el nav */
+  .nav-link {
+    position: relative;
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #def9f9, #12909e);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.5s ease-in-out;
+    }
+    &:hover::before {
+      transform: scaleX(1);
     }
   }
 }

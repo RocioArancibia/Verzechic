@@ -1,24 +1,17 @@
 /* Color pallete */
 /* Para llamar el mapa 
 
-map-get ($colores, principal);
-
-map-get($colores, font);
+map-get($colores, principal)
+map-get($colores, secundario)
+map-get($colores, font)
+map-get($redes, whatsapp)
 */
 /* extend */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
-
 /* para llamar al extend
 @extend %flexColumn;
 
 @extend %flexRow;
 
-recordar ponerlo luego de llamar al class
-*/
 /* mixins */
 /* para llamarlo
 @include flexbox(column, space-between, nowrap)
@@ -50,6 +43,9 @@ body {
 li {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 /* Mobile */
 .btnNav {
   margin-right: 5%; }
@@ -73,6 +69,9 @@ li {
   border: none;
   background-color: white; }
 
+.dropdown-item a {
+  color: #212529; }
+
 /* Web */
 @media screen and (min-width: 1000px) {
   .contenedorItems {
@@ -83,6 +82,13 @@ li {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid white; }
+  /* Desplegable */
+  .dropdown-toggle::after {
+    transition: transform 0.15s linear; }
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px); }
+  .dropdown-menu {
+    margin-top: 0; }
   /* Boton  Saca tu turno*/
   .btnWhatsapp {
     background-color: #def9f9;
@@ -91,15 +97,36 @@ li {
     opacity: 1; }
     .btnWhatsapp:hover {
       background-color: #25d366;
-      transition: 0.2s; }
+      transition: transform 0.5s ease-in-out; }
     .btnWhatsapp .turno {
       color: #0000008c;
       padding: 0; }
       .btnWhatsapp .turno:hover {
         color: white;
-        transition: 0.2s; } }
+        transition: transform 0.5s ease-in-out; }
+  /* ANIMACION linea al pasar el mouse en el nav */
+  .nav-link {
+    position: relative;
+    display: block; }
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #def9f9, #12909e);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.5s ease-in-out; }
+    .nav-link:hover::before {
+      transform: scaleX(1); } }
 
 .contenedorRedes {
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -138,141 +165,299 @@ li {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap; }
-    .contenedorRedes .itemFooter {
-      color: #fff; } }
+    flex-wrap: wrap; } }
 
-/* & se usa para poder acomodar el codigo, para no repetir el mismo class para llamar y darle estilo */
-/* si uso inventacion puedo usar esta propiedad tambien */
-/* Separa por secciones  */
-/* Carrosel */
+.correo:hover {
+  color: #0072c6;
+  transition: 0.2s; }
+
+.whatsapp:hover {
+  color: #25d366;
+  transition: 0.2s; }
+
+.facebook:hover {
+  color: #3b5998;
+  transition: 0.2s; }
+
+.instagram:hover {
+  color: #833ab4;
+  transition: 0.2s; }
+
+/* Mobile first */
+.carroselIndex img {
+  height: 100px; }
+
+.seccionIndex {
+  display: flex;
+  flex-direction: column;
+  margin: 5%; }
+  .seccionIndex .tituloSecundario {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 8% 8% 5% 8%; }
+  .seccionIndex .imagenSeccion {
+    width: 90%;
+    object-fit: cover;
+    padding: 2%;
+    margin: auto; }
+  .seccionIndex .textoSeccion {
+    font-size: 20px;
+    width: 80%;
+    padding: 2%;
+    margin: auto; }
+
+@media only screen and (min-width: 1000px) {
+  .seccionIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%; }
+    .seccionIndex:first-child {
+      background-color: #ecf5f5; }
+    .seccionIndex:last-child {
+      background-color: #ecf5f5; }
+    .seccionIndex .tituloSecundario {
+      width: 135vh;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      padding: 8% 8% 5% 8%; }
+    .seccionIndex .imagenSeccion {
+      width: 40%;
+      object-fit: cover;
+      padding: 2%;
+      margin: auto; }
+    .seccionIndex .textoSeccion {
+      font-size: 20px;
+      width: 40%;
+      padding: 2%;
+      margin: auto; } }
+
+/* 
+main {
+  @extend %flexColumn;
+}
+
 .contenedorFlex {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   margin: 0.25rem;
-  padding: 0.1rem; }
+  padding: 0.1rem;
+}
 
 .contenedorFlex img,
 .contenedorFlex p {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
-/* Cuerpo */
+
 .contenedorFlex p {
   width: 90%;
   margin: auto;
   text-align: justify;
   font-size: 1.25rem;
-  padding: 0 0.5rem; }
+  padding: 0 0.5rem;
+}
 
 .tituloSecundario,
 .tituloTercero {
   text-align: center;
   font-size: 2rem;
   margin-top: 3rem;
-  background-color: #fff; }
-
+  background-color: map-get($colores, tercero);
+}
 .imagen {
   width: 200px;
-  margin: auto; }
+  margin: auto;
+}
 
-/* web */
-@media only screen and (min-width: 1000px) {
+@include mediaQuery(desktop) {
   .carrosel {
     border: solid 1px white;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 60%;
-    margin-top: 10%; }
+    margin-top: 10%;
+  }
   .tituloPrincipal {
-    color: #def9f9;
+    color: map-get($colores, principal);
     text-align: center;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+  }
+
   .nombre {
     margin-bottom: 0rem;
     font-size: 1rem;
-    color: #def9f9; }
+    color: map-get($colores, principal);
+  }
+
   .carrosel img {
     width: auto;
     height: 250px;
-    object-fit: cover; }
+    object-fit: cover;
+  }
+
   .contenedorFlex {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100; }
+    width: 100;
+  }
   .imagen {
-    width: 500px; }
-    .imagen:hover {
+    width: 500px;
+
+    &:hover {
       -webkit-transform: scale(1.05);
       -moz-transform: scale(1.05);
       -o-transform: scale(1.05);
       -ms-transform: scale(1.05);
-      transform: scale(1.05); }
-  /* animacion */
+      transform: scale(1.05);
+    }
+  }
+
+  
+
   .tituloSecundario,
   .tituloTercero {
     text-align: center;
     margin: auto;
     font-size: 24px;
     width: 100%;
-    color: #0000008c; }
-  .imagen {
-    width: 30%;
-    margin: 0; } }
+    color: map-get($colores, font);
+  }
+.imagen {
+  width: 30%;
 
-/* Peluqueria */
-@media screen and (min-width: 801px) {
-  .textoPrimerSubtitulo {
-    font-size: 25px; } }
-
-.tituloPagina {
-  margin-top: 20%;
-  text-align: center; }
-
-.contenedorTitulo {
-  background-color: #def9f9; }
+  margin: 0;
+  
+}
+}
+ */
+/* Mobile */
+.contenedorPeluqueria {
+  background-color: #ecf5f5;
+  padding-top: 20%; }
 
 .textoPrimerSubtitulo {
+  font-size: 25px; }
+
+.tituloPagina {
+  text-align: center;
+  font-weight: 900; }
+
+.textoPrimerSubtitulo {
+  margin: 5%;
+  text-align: center; }
+
+.imagenCards {
+  object-fit: cover;
+  width: 90%;
+  height: 300px;
   margin: 5%; }
 
-.card img {
-  object-fit: cover;
-  width: 95%;
-  height: 300px;
-  margin: auto; }
+.contenedorCard {
+  background-color: #fff; }
 
-/* Carrosel de promociones */
-/*VERSION TAB contacto.html*/
-@media (min-width: 700px) and (max-width: 800px) {
-  .contenedorContacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin: 2% auto; }
-  .contenedorContacto {
-    width: 650px; }
-  form {
-    width: 550px; }
-  .itemContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px; }
-  .mapaContacto {
-    width: 550px;
-    height: 300px; }
-  .contenidoFormulario {
+/* Web */
+@media only screen and (min-width: 1000px) {
+  .contenedorPeluqueria {
+    padding-top: 5%;
+    margin: 0;
+    background-color: #ecf5f5; }
+  .textoPrimerSubtitulo {
+    font-size: 25px; }
+  .tituloPagina {
+    padding: 5% 0 0 0;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+  .textoPrimerSubtitulo {
+    margin: 5%; }
+  .imagenCards {
+    object-fit: cover;
+    width: 95%;
+    height: 300px;
+    margin: auto; }
+  .contenedorCard {
+    background-color: #fff; } }
+
+.carroselPromociones {
+  margin-left: 11%;
+  padding-bottom: 5%; }
+
+.carroselPromociones img {
+  width: 250px; }
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .carroselPromociones {
+    margin-left: 22%; }
+  .carroselPromociones img {
+    width: 450px; } }
+
+@media only screen and (min-width: 1000px) {
+  .carroselPromociones {
+    margin-left: 35%; }
+  .carroselPromociones img {
     width: 450px; }
+  .textoPrimerSubtitulo {
+    text-align: center; }
+  .subtituloSegundo {
+    text-align: center; }
+  /* Carrosel de promociones */ }
+
+.itemContactoIcono a {
+  color: #12909e; }
+
+.itemContactoIcono i {
+  margin-left: 35%; }
+
+.tituloPagina {
+  margin-top: 39%; }
+
+.subtituloSegundo {
+  margin-top: 15%;
+  text-align: center; }
+
+.itemContacto:first-child {
+  margin-left: 9%; }
+
+.botonContacto {
+  margin: 5% 37%; }
+
+.mapaContacto {
+  width: 250px;
+  margin-left: 2%; }
+
+.contenedorContacto {
+  padding-bottom: 5%; }
+
+/*VERSION TAB contacto.html*/
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .tituloPagina {
+    margin-top: 15%; }
+  .botonContacto {
+    margin: 5% 45%; }
+  .mapaContacto {
+    margin-top: 50px;
+    width: 600px;
+    height: 400px; }
+  .subtituloSegundo {
+    margin-left: 0; }
   .itemContactoIcono i {
-    margin-left: 1000px; } }
+    margin-left: 45%; } }
 
 /*VERSION WEB contacto.html*/
-@media screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
+  .tituloPagina {
+    margin-top: 15%; }
+  .subtituloSegundo {
+    margin-top: 15%;
+    text-align: center; }
   .contenedorContacto {
     display: flex;
     flex-direction: row;
@@ -315,8 +500,9 @@ li {
     font-size: 20px;
     text-align: center;
     border: solid 1px black; }
-    .boton:hover {
-      background-color: #12909e; }
+  .subtituloSegundo {
+    margin-top: 15%;
+    text-align: center; }
   .mapaContacto {
     margin-top: 50px;
     width: 350px;
@@ -324,9 +510,3 @@ li {
   .itemContactoIcono {
     width: 400px;
     margin: 0 30px; } }
-
-.itemContactoIcono a {
-  color: #12909e; }
-
-.itemContactoIcono i {
-  margin-left: 30%; }

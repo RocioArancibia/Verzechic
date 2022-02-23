@@ -1,1 +1,35 @@
-/* Carrosel de promociones */
+  .carroselPromociones {
+    margin-left: 11%;
+    padding-bottom: 5%;
+  }
+  .carroselPromociones img {
+    width: 250px;
+  }
+@include mediaQuery (tablet) {
+    .carroselPromociones {
+    margin-left: 22%;
+    
+  }
+  .carroselPromociones img {
+    width: 450px;
+}
+}
+
+@include mediaQuery(desktop) {
+  .carroselPromociones {
+    margin-left: 35%;
+  }
+  .carroselPromociones img {
+    width: 450px;
+  }
+
+  .textoPrimerSubtitulo {
+    text-align: center;
+  }
+
+  .subtituloSegundo {
+    text-align: center;
+  }
+
+  /* Carrosel de promociones */
+}

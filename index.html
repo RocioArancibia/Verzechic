@@ -21,7 +21,7 @@
 
   <!-- Link a font awesome -->
   <script src="https://kit.fontawesome.com/1ce953ece8.js" crossorigin="anonymous"></script>
-  
+
   <!-- Link a google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,34 +59,36 @@
                 <a class="nav-link" href="./index.html">Inicio</a>
               </li>
               <!-- Peluqueria -->
-              <li class="nav-item">
-                <div class="dropdown">
-                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <a class="nav-link link-menu-dux dropdown-toggle" href="./paginas/peluqueria.html">Peluquería</a>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Alisado</button></li>
-                    <li><button class="dropdown-item" type="button">Color</button></li>
-                    <li><button class="dropdown-item" type="button">Bayague</button></li>
-                    <li><button class="dropdown-item" type="button">Corte femenino</button></li>
-                    <li><button class="dropdown-item" type="button">Corte Masculino</button></li>
-                    <li><button class="dropdown-item" type="button">Corte niños</button></li>
-                  </ul>
-                </div>
-              </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Peluquería</a>
+        </button>
+        <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Alisado</a></button>
+          </li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Coloración</a></button>
+          </li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Balayage</a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte infantil</a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Femenino</a></button></li>
+          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte Masculino y Barbería</a></button></li>
+        </ul>
+      </div>
+    </li>
               <!-- Estetica -->
               <li class="nav-item">
                 <div class="dropdown">
                   <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Estética</a>
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Lifting de pestañas</button></li>
-                    <li><button class="dropdown-item" type="button">Limpieza facial</button></li>
-                    <li><button class="dropdown-item" type="button">Depilacion de rostro con cera</button></li>
-                    <li><button class="dropdown-item" type="button">Depilacion definitiva</button></li>
-                    <li><button class="dropdown-item" type="button">Body up</button></li>
-                    <li><button class="dropdown-item" type="button">Crioliposis</button></li>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Lifting de pestañas</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Limpieza facial</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación de rostro con cera</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación definitiva</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Body Up</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Crioliposis</a></button></li>
                   </ul>
                 </div>
               </li>
@@ -100,8 +102,8 @@
               </li>
             </ul>
             <!-- Boton saca tu turno -->
-            <div class="nav-item btnWhatsapp ">
-              <a class="nav-link btn btn  "
+            <div class="btnWhatsapp">
+              <a class="btn"
                 href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
                 target="_blank"><span class="turno"> Saca tu
                   turno </span></a>
@@ -153,34 +155,34 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </Section> <!-- Fin de la seccion Carrosel -->
-  <main class="contendorMain">
-    <div class="contenedorFlex primerFlex card-body">
-      <h2 class="tituloSecundario mt-2">Quienes somos</h2>
-      <img src="./imagenes/quienes-somos.png" alt="quienes-somos" class="imagen img-fluid">
-      <p>Somos un proyecto inspirado en brindar belleza con carácter integral en una atmósfera única, con el mejor
+  </Section> 
+  <!-- Fin de la seccion Carrosel -->
+  <main class="contenedorGrid">
+    <div class="seccionIndex">
+      <h2 class="tituloSecundario">Quienes somos</h2>
+      <img src="./imagenes/quienes-somos.png" alt="quienes-somos" class="imagenSeccion">
+      <p class="textoSeccion">Somos un proyecto inspirado en brindar belleza con carácter integral en una atmósfera única, con el mejor
         equipo de profesionales y el valor agregado de un servicio en constante proceso de renovación y creatividad. Un
         lugar mágico donde obtienes la atención, asesoría y calidad que garantizan nuestros expertos en corte y color,
         manicura y pedicura, maquillaje, peinados y tratamientos de belleza, quienes te brindan un excelente servicio
         utilizando los mejores productos del mercado.
       </p>
     </div>
-    <div class="contenedorFlex">
-      <h3 class="tituloTercero">Nuestra historia
-      </h3>
-      <img src="./imagenes/Nuestra-historia.png" alt="nuestra historia" class="imagen">
-      <p>Verzechic se fundó en octubre de 2018, siempre tratando de evolucionar para brindar los mejores servicios a
+    <div class="seccionIndex">
+      <h2 class="tituloSecundario">Nuestra historia
+      </h2>
+      <img src="./imagenes/Nuestra-historia.png" alt="nuestra historia" class="imagenSeccion">
+      <p class="textoSeccion">Verzechic se fundó en octubre de 2018, siempre tratando de evolucionar para brindar los mejores servicios a
         nuestros clientes, hemos pasado de brindar solo servicios de peluquería a incorporar desde el año 2020 servicios
         de estética en nuestro salón.
         Actualmente somos un equipo que busca lograr un trato personal y destacado hacia nuestros clientes, tratando
         siempre de encontrar la solución que más les favorece en cada momento respecto a sus necesidades.
-
       </p>
     </div>
-    <div class="contenedorFlex">
-      <h3 class="tituloTercero">Nuestra fundadora</h3>
-      <img src="./imagenes/Nuestra-fundadora.png" alt="nuestros profesionales" class="imagen">
-      <p>Soy Veronica Zegarra, una apasionada de la peluquería y estética. Además, cuento con una trayectoria
+    <div class="seccionIndex">
+      <h2 class="tituloSecundario">Nuestra fundadora</h2>
+      <img src="./imagenes/Nuestra-fundadora.png" alt="nuestros profesionales" class="imagenSeccion">
+      <p class="textoSeccion">Soy Veronica Zegarra, una apasionada de la peluquería y estética. Además, cuento con una trayectoria
         profesional de más de diez
         años de
         oficio. Y permanentemente continuo en un proceso de aprendizaje para ofrecer a mis clientes un servicio
@@ -188,25 +190,23 @@
         y comprometido.</p>
     </div>
   </main> <!-- Fin del contenedor Main -->
-
   <!-- FOOTER -->
   <footer class="container">
-    <!-- Redes sociales-->
-    <ul class="contenedorRedes">
-      <li class="p-2 bd-highlight"><a
-          href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-          target="_blank" class="redes"><i class="fab fa-whatsapp-square"></i></a></li>
-      <li class="p-2 bd-highlight"><a href="mailto:
-            veronicazegarra208@gmail.com" target="_blank" class="redes"><i
-            class="fas fa-envelope "></i></a></li>
-      <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
-          class="redes"><i class="fab fa-facebook-square"></i></a></li>
-      <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="redes"><i class="fab fa-instagram-square"></i></a></li>
-    </ul>
-    <!-- Social buttons -->
+  <!-- Redes sociales-->
+  <ul class="contenedorRedes">
+    <li class="p-2 bd-highlight"><a
+        href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
+        target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
+    <li class="p-2 bd-highlight"><a href="mailto:
+                veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i class="fas fa-envelope "></i></a></li>
+    <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
+        class="redes facebook"><i class="fab fa-facebook-square"></i></a></li>
+    <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="redes instagram"><i
+          class="fab fa-instagram-square"></i></a></li>
+  </ul>
+  <!-- Fin redes -->
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <a href="/" class="link-dark text-decoration-none">
       </a>
       <ul class="nav navFooter w-100">
         <li class="nav-item"><a href="./inicio.html" class="nav-link text-muted itemFooter">Inicio</a></li>
