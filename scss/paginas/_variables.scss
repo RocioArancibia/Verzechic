@@ -33,12 +33,7 @@ $redes: (
   align-content: center;
   flex-wrap: wrap;
 }
-/* para llamar al extend
-@extend %flexColumn;
 
-@extend %flexRow;
-
-/* mixins */
 @mixin flexbox($direction, $justify, $content, $wrap) {
   display: flex;
   flex-direction: $direction;
@@ -46,16 +41,6 @@ $redes: (
   align-content: $content;
   flex-wrap: $wrap;
 }
-
-/* para llamarlo
-@include flexbox(column, space-between, nowrap)
-
-
-    @include flexbox(row, space-around, space-around,nowrap);
-
-PARA MEDIA QUERYS
-
-*/
 
 @mixin mediaQuery($diseñoPantalla) {
   @if $diseñoPantalla == desktop {
