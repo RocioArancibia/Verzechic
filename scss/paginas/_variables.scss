@@ -3,20 +3,11 @@ $colores: (
   principal: #def9f9,
   secundario: #12909e,
   tercero: #fff,
-  cuarto:#7DBFC4,
-  backMain:#ecf5f5,
-  font:#0000008c,
-  backFooter:#0000008c,
-  /*   "terciario":$color terciario, */
+  cuarto: #7dbfc4,
+  backMain: #ecf5f5,
+  font: #212529,
+  backFooter: #0000008c,
 );
-
-/* Para llamar el mapa 
-
-map-get($colores, principal)
-map-get($colores, secundario)
-map-get($colores, font)
-map-get($redes, whatsapp)
-*/
 
 $redes: (
   whatsapp: #25d366,
@@ -48,7 +39,7 @@ $redes: (
 @extend %flexRow;
 
 /* mixins */
-@mixin flexbox($direction, $justify, $content,$wrap) {
+@mixin flexbox($direction, $justify, $content, $wrap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -72,7 +63,7 @@ PARA MEDIA QUERYS
       @content;
     }
   } @else if $diseñoPantalla == tablet {
-    @media  screen and (min-width: 700px) and (max-width: 800px)  {
+    @media screen and (min-width: 700px) and (max-width: 800px) {
       @content;
     }
   } @else {
@@ -80,15 +71,3 @@ PARA MEDIA QUERYS
     }
   }
 }
-
-/* 
-@include mediaQuery (desktop) {
-}
-
-@include mediaQuery (tablet) {
-}
-
-@include mediaQuery(mobile) {
-}
-
-  */

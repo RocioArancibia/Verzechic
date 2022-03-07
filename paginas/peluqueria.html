@@ -36,8 +36,8 @@
 
 <!-- NAV BAR -->
 
-<body class="contenedorGrid">
-  <header class="contenedorGridH">
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light navbarlogo bg-navbar fixed-top bg-white contenedorNav">
       <div class="container-fluid">
         <a class="navbar-brand contenedorLogo" href="../index.html"><img src="../imagenes/logo.jpg" alt="Logo"
@@ -69,10 +69,13 @@
                     </li>
                     <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Coloración</a></button>
                     </li>
-                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Balayage</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte infantil</a></button>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Balayage</a></button>
                     </li>
-                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Femenino</a></button>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte
+                          infantil</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte
+                          Femenino</a></button>
                     </li>
                     <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Masculino y
                           Barbería</a></button></li>
@@ -113,9 +116,8 @@
               </li>
             </ul>
             <!-- Boton saca tu turno -->
-            <div class="nav-item btnWhatsapp ">
-              <a class="nav-link btn btn  "
-                href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
+            <div class="btnWhatsapp">
+              <a class="btn" href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
                 target="_blank"><span class="turno"> Saca tu
                   turno </span></a>
             </div>
@@ -128,114 +130,70 @@
   <!--fin del header-->
 
   <main class="contenedorPeluqueria">
-
-    <section class="contenedorTitulo">
-      <h1 class="tituloPagina">Peluquería</h1>
+    <section class="encabezadoContacto">
+      <h1 class="tituloPagina">Conocé nuestros trabajos de peluquería</h1>
       <p class="textoPrimerSubtitulo">Realizamos una consulta muy detallada para especificar que buscás.
         Todos nuestros servicios de peluquería van acompañados de una asesoría de imagen personalizada por parte de
         nuestros profesionales, en donde tenemos en cuenta diferentes factores como las facciones del rostro,
         preferencias
         y
-        perfil del cliente.</p>
+        perfil del cliente.
+      </p>
     </section>
-    <div class="ContenedorCards">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Alisado</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-1-alisado.jpg" class="card-img-top imagen imagenCards" alt="Alisado">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">Realizamos alisados sin formol ni parabenos, con el respaldo de
-              una marca internacional, líder en productos para el cuidado del cabello</p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Coloración</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-2-tintura.jpg" alt="Coloración"
-                  class="card-img-top imagen imagenCards">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">Nuestra coloración incluye diferentes opciones desde los
-              tradicionales con bajo poder
-              de amoniaco hasta los sin amoniaco de 12 minutos pasando por los pigmentos desarrollados que no necesitan
-              oxidación.</p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Balayage</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-3-balayage.jpg" alt="Bayalage" class="card-img-top imagen imagenCards">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">La técnica crea un cabello ligeramente aclarado que luce con un
-              aspecto natural como
-              aclarado por el sol, con tonos más
-              claros en las puntas.
-              Existen diferentes tonos y estilos.</p>
-          </div>
-        </div>
+
+    <div class="contenedorCards">
+      <div class="card">
+        <img src="../imagenes/peluqueria-1-alisado.jpg" alt="Alisado">
+        <h3>Alisado</h3>
+        <p>Realizamos alisados sin formol ni parabenos, con el respaldo de
+          una marca internacional, líder en productos para el cuidado del cabello</p>
+      </div>
+
+      <div class="card">
+        <img src="../imagenes/peluqueria-2-tintura.jpg" alt="Coloración">
+        <h3>Coloración</h3>
+        <p>Nuestra coloración incluye diferentes opciones desde los
+          tradicionales con bajo poder
+          de amoniaco hasta los sin amoniaco de 12 minutos pasando por los pigmentos desarrollados que no necesitan
+          oxidación.</p>
+      </div>
+
+      <div class="card">
+        <img src="../imagenes/peluqueria-3-balayage.jpg" alt="Bayalage">
+        <h3>Balayage</h3>
+        <p>La técnica crea un cabello ligeramente aclarado que luce con un
+          aspecto natural como
+          aclarado por el sol, con tonos más
+          claros en las puntas.
+          Existen diferentes tonos y estilos.</p>
+      </div>
+      <div class="card">
+        <img src="../imagenes/peluqueria-4-corte-femenino.jpg" alt="corte femenino">
+        <h3>Corte femenino</h3>
+        <p>Trabajamos múltiples técnicas para lograr los mejores cortes y
+          tendencias</p>
+      </div>
+
+      <div class="card">
+        <img src="../imagenes/peluqueria-5-corte-niño.jpg" alt="corte niño">
+        <h3>Corte femenino</h3>
+        <p>Contamos con un espacio dedicado al corte infantil. Nuestros
+          profesionales cuentan con
+          experiencia y tienen el mayor de
+          los cuidados y paciencia.</p>
+      </div>
+
+      <div class="card">
+        <img src="../imagenes/peluqueria-6-corte-masculino.jpg" alt="corte masculino">
+        <h3>Corte Masculino</h3>
+        <p>La técnica crea un cabello ligeramente aclarado que luce con un
+          aspecto natural como
+          aclarado por el sol, con tonos más
+          claros en las puntas.
+          Existen diferentes tonos y estilos.</p>
       </div>
     </div>
-
-    <!-- Segunda SECCION -->
-    <div class="ContenedorCards">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Corte femenino</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-4-corte-femenino.jpg" class="card-img-top imagen imagenCards"
-                  alt="Alisado">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">Trabajamos múltiples técnicas para lograr los mejores cortes y
-              tendencias</p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Corte infantil</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-5-corte-niño.jpg" alt="Coloración"
-                  class="card-img-top imagen imagenCards">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">Contamos con un espacio dedicado al corte infantil. Nuestros
-              profesionales cuentan con
-              experiencia y tienen el mayor de
-              los cuidados y paciencia.</p>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-lg-left text-md-center text-sm-center text-center contenedorCard">
-            <h2 class="mb-3 text-center">Corte Masculino y Barbería</h2>
-            <ul class="menu text-center">
-              <li>
-                <img src="../imagenes/peluqueria-6-corte-masculino.jpg" alt="Corte Masculino y Barberia"
-                  class="card-img-top imagen imagenCards">
-              </li>
-            </ul>
-            <p class="mt-3" style="min-height: 100px">La técnica crea un cabello ligeramente aclarado que luce con un
-              aspecto natural como
-              aclarado por el sol, con tonos más
-              claros en las puntas.
-              Existen diferentes tonos y estilos.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
   </main>
-
   <!-- FOOTER -->
   <footer class="container">
     <!-- Redes sociales-->
@@ -243,8 +201,7 @@
       <li class="p-2 bd-highlight"><a
           href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
           target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
-      <li class="p-2 bd-highlight"><a href="mailto:
-                  veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
+      <li class="p-2 bd-highlight"><a href="mailto:veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
             class="fas fa-envelope "></i></a>
       </li>
       <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"

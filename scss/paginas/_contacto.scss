@@ -1,135 +1,261 @@
-.itemContactoIcono a {
-  color: map-get($colores, secundario);
-}
-.itemContactoIcono i {
-  margin-left: 35%;
+.encabezadoContacto {
+  background-color: map-get($colores, principal);
+  color: map-get($colores, font);
+  padding-bottom: 10px;
 }
 .tituloPagina {
-  margin-top: 39%;
+  padding-top: 120px;
+  font-size: 25px;
+  margin-bottom: 0%;
+  font-weight: 900;
+  margin-top: 0;
 }
-.subtituloSegundo {
-  margin-top: 15%;
+.textoPrimerSubtitulo {
+  margin-top: 5px;
   text-align: center;
+  font-size: 25px;
+  font-weight: 200;
 }
-.itemContacto:first-child {
-  margin-left: 9%;
+.redireccionarForm a {
+  font-weight: 700;
+  color: map-get($colores, font);
 }
-.botonContacto {
-  margin: 5% 37%;
-}
-.mapaContacto {
-  width: 250px;
-  margin-left: 2%;
-}
-.contenedorContacto{
-  padding-bottom: 5%;
+.redireccionarWhatsapp a {
+  font-weight: 700;
+  color: map-get($colores, font);
+
+  &:hover {
+    color: map-get($redes, whatsapp);
+  }
 }
 
+.contenedorContacto {
+  background-color: #fff;
+  padding-bottom: 75px;
+  .encabezadoRedes {
+    font-size: 25px;
+    font-weight: 900;
+
+    padding: 200px auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .itemContactoIcono {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    .icnFacebook {
+      color: map-get($colores, secundario);
+      &:hover {
+        color: map-get($redes, facebook);
+      }
+    }
+  }
+}
+.icnInstagram {
+  color: map-get($colores, secundario);
+  &:hover {
+    color: map-get($redes, instagram);
+  }
+}
+
+.encabezadoRedes {
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  padding-top: 100px;
+}
+
+.contenedorFormulario {
+  background-color: #fff;
+
+  form {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    margin: 0 auto;
+  }
+
+  .formulario {
+    margin-top: 6%;
+    .contenidoFormulario {
+      font-family: "Poiret One", cursive;
+      font-size: 20px;
+      border: none;
+      padding: 2% 5%;
+    }
+
+    .botonContacto {
+      font-size: 20px;
+      text-align: center;
+      border: solid 1px black;
+      background-color: map-get($colores, secundario);
+      color: #fff;
+      margin: 5% 36%;
+    }
+  }
+}
 
 /*VERSION TAB contacto.html*/
 @include mediaQuery(tablet) {
+  .contenedorPeluqueria {
+    margin: 0;
+    padding: 0;
+  }
+  .encabezadoContacto {
+    margin: 0;
+    padding-top: 170px;
+  }
   .tituloPagina {
-    margin-top: 15%;
+    margin: 0;
+    padding: 0;
   }
-  .botonContacto {
-    margin: 5% 45%;
-  }
-
   .mapaContacto {
     margin-top: 50px;
     width: 600px;
     height: 400px;
   }
 
-  .subtituloSegundo {
-    margin-left: 0;
-  }
-  .itemContactoIcono i {
-    margin-left: 45%;
+  .contenedorFormulario {
+    background-color: #fff;
+
+    form {
+      border-left: solid 1px black;
+      border-right: solid 1px black;
+      border-bottom: solid 1px black;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    .encabezadoRedes:last-child {
+      margin-bottom: 20;
+    }
+    .formulario {
+      margin-top: 6%;
+      .contenidoFormulario {
+        font-family: "Poiret One", cursive;
+        font-size: 20px;
+        border: none;
+        padding: 2% 5%;
+      }
+
+      .botonContacto {
+        font-size: 20px;
+        text-align: center;
+        border: solid 1px black;
+        background-color: map-get($colores, secundario);
+        color: #fff;
+        margin: 5% 40%;
+      }
+    }
   }
 }
 
 /*VERSION WEB contacto.html*/
 @include mediaQuery(desktop) {
-  .tituloPagina {
-    margin-top: 15%;
+  .encabezadoContacto {
+    background-color: map-get($colores, principal);
+    color: map-get($colores, font);
+    padding-bottom: 20px;
   }
-  .subtituloSegundo {
-    margin-top: 15%;
+  .tituloPagina {
+    padding-top: 170px;
+    font-size: 35px;
+    margin-bottom: 0%;
+    font-weight: 900;
+    margin-top: 0;
+  }
+  .textoPrimerSubtitulo {
+    margin-top: 5px;
     text-align: center;
+    font-size: 35px;
+    font-weight: 200;
   }
 
   .contenedorContacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: #fff;
+    padding-bottom: 75px;
+    .encabezadoRedes {
+      font-size: 35px;
+      font-weight: 900;
 
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
+      padding: 200px auto;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .itemContactoIcono {
+      width: 90%;
+
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      .iconoWhatsapp {
+        &:hover {
+          color: map-get($redes, whatsapp);
+        }
+        .iconoInstagram {
+          &:hover {
+            color: map-get($redes, instagram);
+          }
+        }
+      }
+    }
+  }
+  .encabezadoRedes {
+    width: 100%;
     text-align: center;
-  }
-
-  .itemContacto {
-    display: flex;
-
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    align-items: center;
-    align-content: center;
-    width: 400px;
-    height: 450px;
-  }
-
-  .contendorMapaForm {
-    display: flex;
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    width: 1000px;
-  }
-
-  form {
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-    width: 350px;
-    height: 400px;
-  }
-  form label {
-    margin-left: 5%;
-    text-align: center;
-  }
-  .contenidoFormulario {
-    font-family: "Poiret One", cursive;
-    background-color: map-get($colores, principal);
-    font-size: 20px;
-    border: none;
-    padding: 2% 5%;
-  }
-
-  .boton {
-    font-size: 20px;
-    text-align: center;
-    border: solid 1px black;
-
-  }
-  .subtituloSegundo {
-    margin-top: 15%;
-    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    padding-top: 100px;
   }
 
   .mapaContacto {
-    margin-top: 50px;
-    width: 350px;
+    padding: 2% 2% 0 2%;
+    width: 75%;
     height: 400px;
   }
-  .itemContactoIcono {
-    width: 400px;
-    margin: 0 30px;
+
+  .contenedorFormulario {
+    background-color: #fff;
+
+    form {
+      border-left: solid 1px black;
+      border-right: solid 1px black;
+      border-bottom: solid 1px black;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    .encabezadoRedes:last-child {
+      margin-bottom: 20;
+    }
+    .formulario {
+      margin-top: 6%;
+      .contenidoFormulario {
+        font-family: "Poiret One", cursive;
+        font-size: 20px;
+        border: none;
+        padding: 2% 5%;
+      }
+
+      .botonContacto {
+        font-size: 20px;
+        text-align: center;
+        border: solid 1px black;
+        background-color: map-get($colores, secundario);
+        color: #fff;
+        margin: 5% 45%;
+      }
+    }
   }
 }

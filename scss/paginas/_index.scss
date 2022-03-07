@@ -1,8 +1,8 @@
 /* Mobile first */
-
-.carroselIndex img {
-  height: 100px;
+.contenedorCarrosel {
+  margin-top: 150px;
 }
+
 .seccionIndex {
   display: flex;
   flex-direction: column;
@@ -14,8 +14,7 @@
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-
-    padding: 8% 8% 5% 8%;
+    padding: 8% 8% 1% 8%;
   }
   .imagenSeccion {
     width: 90%;
@@ -31,7 +30,27 @@
   }
 }
 
+/* tablet */
+@include mediaQuery(tablet) {
+  .contenedorCarrosel {
+    height: 300px;
+  }
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.75;
+  }
+}
+
 @include mediaQuery(desktop) {
+  .contenedorCarrosel {
+    height: 400px;
+  }
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+
   .seccionIndex {
     display: flex;
     flex-direction: row;
@@ -41,19 +60,19 @@
     margin: 5%;
 
     &:first-child {
-      background-color: map-get($colores, backMain);
+      background-color: map-get($colores, principal);
     }
     &:last-child {
-      background-color: map-get($colores, backMain);
+      background-color: map-get($colores, principal);
     }
 
     .tituloSecundario {
       width: 135vh;
       text-align: center;
-      font-size: 32px;
+      font-size: 35px;
       font-weight: 700;
 
-      padding: 8% 8% 5% 8%;
+      padding: 8% 8% 1% 8%;
     }
     .imagenSeccion {
       width: 40%;
@@ -69,106 +88,3 @@
     }
   }
 }
-
-/* 
-main {
-  @extend %flexColumn;
-}
-
-.contenedorFlex {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin: 0.25rem;
-  padding: 0.1rem;
-}
-
-.contenedorFlex img,
-.contenedorFlex p {
-  font-size: 1.5rem;
-}
-
-
-.contenedorFlex p {
-  width: 90%;
-  margin: auto;
-  text-align: justify;
-  font-size: 1.25rem;
-  padding: 0 0.5rem;
-}
-
-.tituloSecundario,
-.tituloTercero {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 3rem;
-  background-color: map-get($colores, tercero);
-}
-.imagen {
-  width: 200px;
-  margin: auto;
-}
-
-@include mediaQuery(desktop) {
-  .carrosel {
-    border: solid 1px white;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    height: 60%;
-    margin-top: 10%;
-  }
-  .tituloPrincipal {
-    color: map-get($colores, principal);
-    text-align: center;
-    margin-bottom: 5%;
-  }
-
-  .nombre {
-    margin-bottom: 0rem;
-    font-size: 1rem;
-    color: map-get($colores, principal);
-  }
-
-  .carrosel img {
-    width: auto;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  .contenedorFlex {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100;
-  }
-  .imagen {
-    width: 500px;
-
-    &:hover {
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05);
-    }
-  }
-
-  
-
-  .tituloSecundario,
-  .tituloTercero {
-    text-align: center;
-    margin: auto;
-    font-size: 24px;
-    width: 100%;
-    color: map-get($colores, font);
-  }
-.imagen {
-  width: 30%;
-
-  margin: 0;
-  
-}
-}
- */

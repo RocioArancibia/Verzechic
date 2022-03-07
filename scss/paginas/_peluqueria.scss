@@ -1,10 +1,7 @@
 /* Mobile */
 .contenedorPeluqueria {
   background-color: map-get($colores, backMain);
-    padding-top: 20%;
-}
-.textoPrimerSubtitulo {
-  font-size: 25px;
+  padding-top: 20%;
 }
 
 .tituloPagina {
@@ -16,27 +13,69 @@
   margin: 5%;
   text-align: center;
 }
-
-.imagenCards {
-  object-fit: cover;
-  width: 90%;
-  height: 300px;
-  margin: 5%;
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100;
 }
 
-.contenedorCard {
-  background-color: map-get($colores, tercero);
+.contenedorCards {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.contenedorCards .card {
+  width: 330px;
+  height: 540px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.contenedorCards .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorCards .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+}
+
+.contenedorCards .card h3 {
+  font-weight: 600;
+}
+
+.contenedorCards .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contenedorCards .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
 }
 
 /* Web */
 @include mediaQuery(desktop) {
   .contenedorPeluqueria {
     padding-top: 5%;
-margin: 0;
+    margin: 0;
     background-color: map-get($colores, backMain);
   }
   .textoPrimerSubtitulo {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .tituloPagina {
@@ -48,16 +87,5 @@ margin: 0;
 
   .textoPrimerSubtitulo {
     margin: 5%;
-  }
-
-  .imagenCards {
-    object-fit: cover;
-    width: 95%;
-    height: 300px;
-    margin: auto;
-  }
-
-  .contenedorCard {
-    background-color: map-get($colores, tercero);
   }
 }

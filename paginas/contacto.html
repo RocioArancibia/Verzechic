@@ -36,8 +36,8 @@
 
 <!-- NAV BAR -->
 
-<body class="contenedorGrid">
-  <header class="contenedorGridH">
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light navbarlogo bg-navbar fixed-top bg-white contenedorNav">
       <div class="container-fluid">
         <a class="navbar-brand contenedorLogo" href="../index.html"><img src="../imagenes/logo.jpg" alt="Logo"
@@ -58,7 +58,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
-              <!-- Peluqueria -->
               <!-- Peluqueria -->
               <li class="nav-item">
                 <div class="dropdown">
@@ -117,9 +116,8 @@
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
-            <!-- Boton saca tu turno -->
-            <div class="nav-item btnWhatsapp ">
-              <a class="nav-link btn btn  "
+            <div class="btnWhatsapp">
+              <a class="btn"
                 href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
                 target="_blank"><span class="turno"> Saca tu
                   turno </span></a>
@@ -132,34 +130,45 @@
   </header>
   <!--fin del header-->
   <main class="contenedorPeluqueria">
-    <h1 class="tituloPagina">Contacto</h1>
-    <p class="textoPrimerSubtitulo">Nuestros horarios de atención son de Martes a Sabado de 10 a 13 y 17 a 20:30hs.
-      Para solicitar tu turno o presupuesto contactanos completando el formulario o haciendo click aca
-    </p>
-    <Section class="contenedorContacto">
+    <section class="encabezadoContacto">
+      <h1 class="tituloPagina">¡Te estamos esperando!</h1>
+      <p class="textoPrimerSubtitulo">Nuestros horarios de atención son de martes a sábado de 10 a 13 y 17 a 20:30hs.
+        Para solicitar tu turno o presupuesto contactanos completando el <span class="redireccionarForm"><a
+            href="#completaForm">formulario</a></span> o haciendo click <span class=" redireccionarWhatsapp"><a
+            href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
+            target="_blank">acá</a></span>
+      </p>
+    </section>
+    <!-- Fin del encabezado -->
+    <div class="contenedorContacto">
+      <h2 class="encabezadoRedes">¡Seguinos en nuestras redes!</h2>
       <div class="itemContactoIcono">
-        <a href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-          target="_blank" class="iconoWhatsapp"><i class="fab fa-whatsapp-square fa-8x"></i></a>
-      </div>
-      <div class="itemContactoIcono">
-        <a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="iconoInstagram"><i
+        <a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank" class="icnFacebook"><i
+            class="fab fa-facebook-square fa-8x"></i></a>
+        <a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="icnInstagram"><i
             class="fab fa-instagram-square fa-8x"></i></a>
       </div>
+    </div><!-- Fin de contenedor redes -->
+
+    <div>
+      <!-- Contenedor Mapa -->
       <div class="contendorMapaForm">
-        <div class="itemContacto">
-          <h2 class="subtituloSegundo">¿Donde estamos?</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1107.25013957037!2d-64.27815181666007!3d-31.301910195043884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d858fe15121%3A0xccd7e71c2c8e9342!2sVerzechic!5e0!3m2!1ses!2sar!4v1640706759900!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy" class="mapaContacto"></iframe>
+        <div>
+          <h2 class="encabezadoRedes">¿Donde estamos?</h2>
+          <p class="textoPrimerSubtitulo">Nuestro salón se encuentra ubicado en calle Mendoza 1788, ciudad de Villa
+            Allende, en la provincia de Córdoba. A pocos metros del Villa Allende Shopping.
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1107.25013957037!2d-64.27815181666007!3d-31.301910195043884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d858fe15121%3A0xccd7e71c2c8e9342!2sVerzechic!5e0!3m2!1ses!2sar!4v1640706759900!5m2!1ses!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy" class="mapaContacto"></iframe>
         </div>
-        <div class="itemContacto">
-          <h2 class="subtituloSegundo">Completa el formulario para contactarnos</h2>
-          <form class="segundoTexto">
+
+        <div class="contenedorFormulario" id="completaForm">
+          <h2 class="encabezadoRedes">Completa el formulario para contactarnos</h2>
+          <form class="formulario">
             <div class="form-floating">
               <textarea class="form-control" placeholder="Nombre y apellido:" id="floatingTextarea"></textarea>
               <label for="floatingTextarea" class="textoForm">Escribí tu nombre y apellido</label>
             </div>
-
             <div class="form-floating">
               <textarea class="form-control" placeholder="Teléfono" id="floatingTextarea"></textarea>
               <label for="floatingTextarea" class="textoForm">Escribí tu teléfono</label>
@@ -171,14 +180,13 @@
             <div class="form-floating">
               <textarea class="form-control" placeholder="Escribí tu mensaje" id="floatingTextarea"></textarea>
               <label for="floatingTextarea" class="textoForm">Escribí tu mensaje</label>
-              <button class="btn btn-primary botonContacto" type="submit">Enviar</button>
+              <button class="btn botonContacto" type="submit">Enviar</button>
             </div>
           </form>
         </div>
       </div>
       <!--fin del form-->
-      </div>
-    </Section>
+    </div>
   </main>
   <!-- FOOTER -->
   <footer class="container">
@@ -187,8 +195,7 @@
       <li class="p-2 bd-highlight"><a
           href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
           target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
-      <li class="p-2 bd-highlight"><a href="mailto:
-                  veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
+      <li class="p-2 bd-highlight"><a href="mailto:veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
             class="fas fa-envelope "></i></a>
       </li>
       <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"

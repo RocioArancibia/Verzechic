@@ -32,7 +32,6 @@
 
   .redes {
     margin: 50px;
-
   }
 
   .contenedorRedes {
@@ -40,20 +39,19 @@
   }
 }
 
-    .correo:hover {
-      color: map-get($redes, correo);
-      transition: 0.2s;
-    }
-    .whatsapp:hover {
-      color: map-get($redes, whatsapp);
-      transition: 0.2s;
-    }
+.correo:hover {
+  color: map-get($redes, correo);
+  transition: 0.2s;
+}
+.whatsapp:hover {
+  color: map-get($redes, whatsapp);
+  transition: 0.2s;
+}
 
-    .facebook:hover {
-      color: map-get($redes, facebook);
-      transition: 0.2s;
-    }
-    .instagram:hover {
-      color: map-get($redes, instagram);
-      transition: 0.2s;
-    }
+.facebook:hover {
+  color: map-get($redes, facebook);
+  transition: 0.2s;
+}
+.instagram:hover {
+  color: map-get($redes, instagram);
+}
