@@ -36,8 +36,8 @@
 
 <!-- NAV BAR -->
 
-<body class="contenedorGrid">
-  <header class="contenedorGridH">
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light navbarlogo bg-navbar fixed-top bg-white contenedorNav">
       <div class="container-fluid">
         <a class="navbar-brand contenedorLogo" href="./index.html"><img src="./imagenes/logo.jpg" alt="Logo"
@@ -59,23 +59,29 @@
                 <a class="nav-link" href="./index.html">Inicio</a>
               </li>
               <!-- Peluqueria -->
-    <li class="nav-item">
-      <div class="dropdown">
-        <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Peluquería</a>
-        </button>
-        <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
-          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Alisado</a></button>
-          </li>
-          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Coloración</a></button>
-          </li>
-          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Balayage</a></button></li>
-          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte infantil</a></button></li>
-          <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Femenino</a></button></li>
-          <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte Masculino y Barbería</a></button></li>
-        </ul>
-      </div>
-    </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Peluquería</a>
+                  </button>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a
+                          href="./paginas/peluqueria.html">Alisado</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a
+                          href="./paginas/peluqueria.html">Coloración</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a
+                          href="./paginas/peluqueria.html">Balayage</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte
+                          infantil</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte
+                          Femenino</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/peluqueria.html">Corte Masculino
+                          y Barbería</a></button></li>
+                  </ul>
+                </div>
+              </li>
               <!-- Estetica -->
               <li class="nav-item">
                 <div class="dropdown">
@@ -83,12 +89,18 @@
                     <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Estética</a>
                   </button>
                   <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Lifting de pestañas</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Limpieza facial</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación de rostro con cera</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación definitiva</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Body Up</a></button></li>
-                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Crioliposis</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Lifting de
+                          pestañas</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Limpieza
+                          facial</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación de
+                          rostro con cera</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Depilación
+                          definitiva</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./paginas/estetica.html">Body
+                          Up</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a
+                          href="./paginas/estetica.html">Crioliposis</a></button></li>
                   </ul>
                 </div>
               </li>
@@ -115,54 +127,60 @@
     <!-- Fin del contenedor Nav -->
   </header>
   <!--fin del header-->
-  <Section class="carrosel">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <main>
+    <section class="contenedorCarrosel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./imagenes/carrosel-dos.jpg" class="d-block w-100" alt="peluqueria">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Verzechic</h3>
+              <p>Peluquería y estética</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./imagenes/carrosel-uno.jpg" class="d-block w-100" alt="peluqueria">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Productos de calidad</h3>
+              <p>En Verzechic nuestro objetivo es brindar a nuestros clientes el mejor servicio posible y para ello
+                trabajamos con
+                productos de la más alta calidad.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/carrosel-tres.jpg" class="d-block w-100" alt="peluqueria y estetica">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Servicio Integral</h3>
+              <p>En Verzechic ofremos un servicio integral de peluquería y estética para mujeres, hombres y niños.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./imagenes/carrosel-1.jpg" class="d-block w-100" alt="productos">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="tituloPrincipal">Verzechic <p class="nombre">Peluquería y Estética</p>
-            </h1>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./imagenes/carrosel-2.jpg" class="d-block w-100" alt="alisado">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="tituloPrincipal">Verzechic <p class="nombre">Peluquería y Estética</p>
-            </h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./imagenes/carrosel-3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="tituloPrincipal">Verzechic <p class="nombre">Peluquería y Estética</p>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </Section> 
-  <!-- Fin de la seccion Carrosel -->
-  <main class="contenedorGrid">
+    </section>
+
     <div class="seccionIndex">
       <h2 class="tituloSecundario">Quienes somos</h2>
       <img src="./imagenes/quienes-somos.png" alt="quienes-somos" class="imagenSeccion">
-      <p class="textoSeccion">Somos un proyecto inspirado en brindar belleza con carácter integral en una atmósfera única, con el mejor
-        equipo de profesionales y el valor agregado de un servicio en constante proceso de renovación y creatividad. Un
+      <p class="textoSeccion">Somos un proyecto inspirado en brindar belleza con carácter integral en una atmósfera
+        única, con el mejor
+        equipo de profesionales y el valor agregado de un servicio en constante proceso de renovación y creatividad.
+        Un
         lugar mágico donde obtienes la atención, asesoría y calidad que garantizan nuestros expertos en corte y color,
         manicura y pedicura, maquillaje, peinados y tratamientos de belleza, quienes te brindan un excelente servicio
         utilizando los mejores productos del mercado.
@@ -172,8 +190,10 @@
       <h2 class="tituloSecundario">Nuestra historia
       </h2>
       <img src="./imagenes/Nuestra-historia.png" alt="nuestra historia" class="imagenSeccion">
-      <p class="textoSeccion">Verzechic se fundó en octubre de 2018, siempre tratando de evolucionar para brindar los mejores servicios a
-        nuestros clientes, hemos pasado de brindar solo servicios de peluquería a incorporar desde el año 2020 servicios
+      <p class="textoSeccion">Verzechic se fundó en octubre de 2018, siempre tratando de evolucionar para brindar los
+        mejores servicios a
+        nuestros clientes, hemos pasado de brindar solo servicios de peluquería a incorporar desde el año 2020
+        servicios
         de estética en nuestro salón.
         Actualmente somos un equipo que busca lograr un trato personal y destacado hacia nuestros clientes, tratando
         siempre de encontrar la solución que más les favorece en cada momento respecto a sus necesidades.
@@ -182,7 +202,8 @@
     <div class="seccionIndex">
       <h2 class="tituloSecundario">Nuestra fundadora</h2>
       <img src="./imagenes/Nuestra-fundadora.png" alt="nuestros profesionales" class="imagenSeccion">
-      <p class="textoSeccion">Soy Veronica Zegarra, una apasionada de la peluquería y estética. Además, cuento con una trayectoria
+      <p class="textoSeccion">Soy Veronica Zegarra, una apasionada de la peluquería y estética. Además, cuento con una
+        trayectoria
         profesional de más de diez
         años de
         oficio. Y permanentemente continuo en un proceso de aprendizaje para ofrecer a mis clientes un servicio
@@ -192,19 +213,20 @@
   </main> <!-- Fin del contenedor Main -->
   <!-- FOOTER -->
   <footer class="container">
-  <!-- Redes sociales-->
-  <ul class="contenedorRedes">
-    <li class="p-2 bd-highlight"><a
-        href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
-        target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
-    <li class="p-2 bd-highlight"><a href="mailto:
-                veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i class="fas fa-envelope "></i></a></li>
-    <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
-        class="redes facebook"><i class="fab fa-facebook-square"></i></a></li>
-    <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank" class="redes instagram"><i
-          class="fab fa-instagram-square"></i></a></li>
-  </ul>
-  <!-- Fin redes -->
+    <!-- Redes sociales-->
+    <ul class="contenedorRedes">
+      <li class="p-2 bd-highlight"><a
+          href="https://api.whatsapp.com/send?phone=543543317887&text=Hola!%20Quiero%20solicitar%20un%20turno"
+          target="_blank" class="redes whatsapp"><i class="fab fa-whatsapp-square"></i></a></li>
+      <li class="p-2 bd-highlight"><a href="mailto:veronicazegarra208@gmail.com" target="_blank" class="redes correo"><i
+            class="fas fa-envelope "></i></a>
+      </li>
+      <li class="p-2 bd-highlight"><a href="https://www.facebook.com/Verzechic-102004884919153/" target="_blank"
+          class="redes facebook"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="p-2 bd-highlight"><a href="https://www.instagram.com/esteticaverzechic/" target="_blank"
+          class="redes instagram"><i class="fab fa-instagram-square"></i></a></li>
+    </ul>
+    <!-- Fin redes -->
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <a href="/" class="link-dark text-decoration-none">
       </a>
